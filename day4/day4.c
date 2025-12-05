@@ -64,6 +64,7 @@ int main(){
         y = 0, x = 0;
 
         for (int i = 0; i < height; i++) {
+            if (copy[i]) free(copy[i]);
             copy[i] = strdup(lines[i]);  // allocate memory and copy string
             // printf("%s\n", copy[i]);
         }
